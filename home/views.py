@@ -66,7 +66,7 @@ import subprocess
 from django.http import HttpResponse
 
 def run_lane_script(request):
-    result = subprocess.run(['python', r'lane_detection-master\laneDetection.py'], capture_output=True, text=True)
+    result = subprocess.run(['python', r'Lane\laneDetection.py'], capture_output=True, text=True)
 
     return HttpResponseRedirect(reverse('lane'))
 
