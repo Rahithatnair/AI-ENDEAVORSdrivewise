@@ -28,7 +28,7 @@ vs = cv2.VideoCapture(args["webcam"], cv2.CAP_DSHOW)
 # vs = cv2.VideoCapture(args["webcam"], cv2.CAP_FFMPEG)
 
 # Load facial landmark predictor
-predictor_path = r"driver-fatigue-detection-system-master/shape_predictor_68_face_landmarks.dat"
+predictor_path = r"driverFatigueDetection/shape_predictor_68_face_landmarks.dat"
 predictor = dlib.shape_predictor(predictor_path)
 
 # Function to compute the eye aspect ratio (EAR)
