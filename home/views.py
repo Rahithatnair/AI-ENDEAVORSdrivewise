@@ -36,7 +36,7 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 
 def run_detection_script(request):
-    result = subprocess.run(['python', r'driver-fatigue-detection-system-master\drowsiness detection.py'], capture_output=True, text=True)
+    result = subprocess.run(['python', r'driverFatigueDetection\drowsiness detection.py'], capture_output=True, text=True)
 
    
     return HttpResponseRedirect(reverse('drowsiness'))
